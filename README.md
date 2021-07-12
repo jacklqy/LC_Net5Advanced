@@ -48,4 +48,25 @@ Option三种获取方式
 俄罗斯套娃：多层委托嵌套----达到俄罗斯套娃效果---方便扩展管道就是委托！动态组装---随意指定环节轻松扩展---这就是委托嵌套
 ![image](https://user-images.githubusercontent.com/26539681/125222811-4e1c1a80-e2fd-11eb-9b86-e2dcf9470b00.png)
 
+### 全家桶 VS 自选
+Http请求的处理是蛮复杂---不光是生成个HTML---处理Cookie-Session---Token—缓存---重要的是业务步骤---一起很多个步骤—部分是通用的
+  
+ASP.NET和MVC管道---搭建框架---完成通用部分且提供扩展--基于事件event扩展---配置齐全直接用—但是会付出额外成本
+  
+ASP.NET Core管道---自选式---只有基本骨架，需要自行配置—要什么组装什么---Pay for what you use
+![image](https://user-images.githubusercontent.com/26539681/125223207-f92cd400-e2fd-11eb-9824-053f75268eee.png)
 
+### Middleware各种扩展源码篇
+1 Use 2 Run 3 UseWhen 4 Map 5 MapWhen 
+  
+这些都是对基础Use方法的封装，终结就是不调用Next，后3个都是开了独立的Branch，然后执行
+![image](https://user-images.githubusercontent.com/26539681/125223428-56288a00-e2fe-11eb-9c0d-d1069dde0334.png)
+
+## 标准中间件封装 UseMiddleware + AddMiddleware + Options
+1 基本结构认知 2 Add集中注册 3 Use扩展类 4 Options传值
+  
+写一个浏览器校验—如果是Chrome就正常响应，否则返回
+![image](https://user-images.githubusercontent.com/26539681/125223637-b0294f80-e2fe-11eb-9b57-dde0f5949643.png)
+![image](https://user-images.githubusercontent.com/26539681/125223679-be776b80-e2fe-11eb-8501-11fb873ee8d3.png)
+
+  
