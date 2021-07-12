@@ -23,3 +23,6 @@
 2 Build()
 
 3 HostRun
+## Logger组件-常规扩展
+![image](https://user-images.githubusercontent.com/26539681/125220866-e4e6d800-e2f9-11eb-8dbf-855a38e257d6.png)
+![image](https://user-images.githubusercontent.com/26539681/125220762-ca146380-e2f9-11eb-8720-05f407d018a5.png)
