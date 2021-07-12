@@ -40,3 +40,5 @@ Option三种获取方式
 2 IOptionsMonitor<EmailOption>  需要更新IOptionsMonitor
   
 3 IOptionsSnapshot<EmailOption> IOptionsSnapshot(除非单次请求内要求保证不变)
+![image](https://user-images.githubusercontent.com/26539681/125222415-8707bf80-e2fc-11eb-8f49-5c72834c5453.png)
+
