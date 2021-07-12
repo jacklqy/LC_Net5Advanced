@@ -41,4 +41,11 @@ Option三种获取方式
   
 3 IOptionsSnapshot<EmailOption> IOptionsSnapshot(除非单次请求内要求保证不变)
 ![image](https://user-images.githubusercontent.com/26539681/125222415-8707bf80-e2fc-11eb-8f49-5c72834c5453.png)
+## ASP.NET Core管道模型
+连接点？ 管道模型！何谓管道模型？就是个委托！
+  
+管道模型---承上启下---连接kestrel与MVC---Kestrel监听请求，解析得到HttpContext---MVC就是处理HttpContext(Request&Response)连接点(管道)其实是个委托---RequestDelegate---接受HttpContext参数，处理后得到结果，都在HttpContext里面折腾。
+俄罗斯套娃：多层委托嵌套----达到俄罗斯套娃效果---方便扩展管道就是委托！动态组装---随意指定环节轻松扩展---这就是委托嵌套
+![image](https://user-images.githubusercontent.com/26539681/125222811-4e1c1a80-e2fd-11eb-9b86-e2dcf9470b00.png)
+
 
