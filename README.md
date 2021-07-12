@@ -68,5 +68,5 @@ ASP.NET Core管道---自选式---只有基本骨架，需要自行配置—要�
 写一个浏览器校验—如果是Chrome就正常响应，否则返回
 ![image](https://user-images.githubusercontent.com/26539681/125223637-b0294f80-e2fe-11eb-9b57-dde0f5949643.png)
 ![image](https://user-images.githubusercontent.com/26539681/125223679-be776b80-e2fe-11eb-8501-11fb873ee8d3.png)
-
+## Stream读取问题
   
