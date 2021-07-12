@@ -69,4 +69,9 @@ ASP.NET Core管道---自选式---只有基本骨架，需要自行配置—要�
 ![image](https://user-images.githubusercontent.com/26539681/125223637-b0294f80-e2fe-11eb-9b57-dde0f5949643.png)
 ![image](https://user-images.githubusercontent.com/26539681/125223679-be776b80-e2fe-11eb-8501-11fb873ee8d3.png)
 ## Stream读取问题
+中间件去扩展MVC，其实不能随便写Response—因为请求响应已完成，里面的Content-Length已固定，所以不能改---那怎么改？---OnStarting可以修改Header---但是我想读写Request和Response
   
+1 请求体读取问题
+  
+2 响应体读取问题
+![image](https://user-images.githubusercontent.com/26539681/125224422-309c8000-e300-11eb-82aa-afe58111ee34.png)
