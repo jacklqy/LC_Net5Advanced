@@ -63,7 +63,7 @@ ASP.NET Core管道---自选式---只有基本骨架，需要自行配置—要�
 ![image](https://user-images.githubusercontent.com/26539681/125223428-56288a00-e2fe-11eb-9c0d-d1069dde0334.png)
 
 ## (重点)标准中间件封装 AddMiddleware + UseMiddleware + Options
-1 基本结构认知 2 Add集中注册 3 Use扩展类 4 Options传值
+1 基本结构认知 2 Add集中注册--IOC 3 Use扩展类--Invoke 4 Options传值
   
 写一个浏览器校验—如果是Chrome就正常响应，否则返回
 ![image](https://user-images.githubusercontent.com/26539681/125223637-b0294f80-e2fe-11eb-9b57-dde0f5949643.png)
