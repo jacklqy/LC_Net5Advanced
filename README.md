@@ -62,7 +62,7 @@ ASP.NET Core管道---自选式---只有基本骨架，需要自行配置—要�
 这些都是对基础Use方法的封装，终结就是不调用Next，后3个都是开了独立的Branch，然后执行
 ![image](https://user-images.githubusercontent.com/26539681/125223428-56288a00-e2fe-11eb-9c0d-d1069dde0334.png)
 
-## 标准中间件封装 UseMiddleware + AddMiddleware + Options
+## (重点)标准中间件封装 UseMiddleware + AddMiddleware + Options
 1 基本结构认知 2 Add集中注册 3 Use扩展类 4 Options传值
   
 写一个浏览器校验—如果是Chrome就正常响应，否则返回
@@ -75,5 +75,11 @@ ASP.NET Core管道---自选式---只有基本骨架，需要自行配置—要�
   
 2 响应体读取问题
 ![image](https://user-images.githubusercontent.com/26539681/125224422-309c8000-e300-11eb-82aa-afe58111ee34.png)
-  
+
+## 常见中间件解读
+待续...
+
+## 中间件放置顺序问题-》是建立在理解源码的基础上
+待续...
+
 希望为.net开源社区尽绵薄之力，探lu者###一直在探索前进的路上###（QQ:529987528）
